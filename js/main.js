@@ -6,5 +6,4 @@ $(document).ready(function () {
   $("li").children().click(function (event) {
     $('.menu-wrap, .menu-burger').removeClass('active');
   });
-
 });
