@@ -4,45 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Александр Милкин </title>
+  <title>Александр Милкин</title>
+
   <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"
     type='text/css' rel="preload" as="style">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" type='text/css' rel="preload" as="style">
-  <link rel="stylesheet" href="css/main.min.css" type='text/css' rel="preload" as="style">
-  <link rel="stylesheet" href="css/style.min.css" type='text/css' rel="preload" as="style">
-
-
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" type='text/css' rel="preload" as="style">
 </head>
 
 <body>
   <header id="resume">
+    <div class="header__wrap ">
+      <div class="container ">
+        <div class="header__wrap-menu">
+          <div class="resume-logo">
+            <a href="index.html"><img loading="lazy" src="images/logotip.png" alt="logo"></a>
+          </div>
 
-    <div class="header-resume">
-      <div class="container">
-        <div class="resume-logo">
-          <a href="index.html"><img src="img/logotip.png" alt="logo"></a>
-        </div>
-        <nav>
-          <div class="menu">
-            <div class="menu-burger">
-              <span></span>
-            </div>
-            <div class="menu-wrap">
-              <ul clasas="menu-list">
-                <li><a href="#resume" clasas="menu-link">Резюме</a></li>
-                <li><a href="#portfolio" clasas="menu-link">Портфолио</a></li>
-                <li><a href="#contact" clasas="menu-link">Контакты</a></li>
-              </ul>
-            </div>
+          <nav>
+            <div class="header__menu">
+              <div class="header__menu-burger">
+                <span></span>
+              </div>
+              <div class="header__menu-wrap">
+                <ul class="header__wrap-ul">
+                  <li> <a class="header__wrap-items" href="#resume">Резюме </a></li>
+                  <li> <a class="header__wrap-items" href="#skills">Навыки</a></li>
+                  <li><a class="header__wrap-items" href="#portfolio">Портфолио</a></li>
+                  <li><a class="header__wrap-items" href="#contact">Контакты</a></li>
+                </ul>
+              </div><!-- header__menu-wrap -->
+            </div><!--  header__menu-->
+          </nav>
 
-          </div><!--  menu -->
-        </nav>
-      </div> <!--  container -->
-    </div>
+          <div class="header__wrap-social">
+            <div class="header__wrap-social-block">
+
+              <a href="https://t.me/milarti" class="portfolio-link" target="_blank">
+                <div class="header__wrap-item">
+                  <div class="header__wrap-icon social-icon-fa"><i class="fab fa-telegram-plane"></i></div>
+                </div>
+              </a>
+
+              <a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks" class="portfolio-link" target="_blank">
+                <div class="header__wrap-item">
+                  <div class="header__wrap-icon social-icon-fa"><i class="fab fa-facebook-f"></i></div>
+                </div>
+              </a>
+
+              <a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" class="portfolio-link" target="_blank">
+                <div class="header__wrap-item">
+                  <div class="header__wrap-icon social-icon-yo"><i class="fab fa-youtube"></i></div>
+                </div>
+              </a>
+
+              <a href="https://twitter.com/milart61" class="portfolio-link" target="_blank">
+                <div class="header__wrap-item">
+                  <div class="header__wrap-icon social-icon-tw"><i class="fab fa-twitter"></i></div>
+
+                </div>
+              </a>
+            </div> <!-- header__wrap-social-block -->
+          </div> <!-- header__wrap-social -->
+        </div> <!-- header__wrap-menu -->
+      </div> <!-- container -->
+    </div> <!-- header-wrap -->
+
     <div class="name-resume">
       <div class="container wraper-name">
         <div class="title-resume">
@@ -50,402 +79,279 @@
           <div class="text-resume">web developer</div>
         </div>
         <div class="foto-resume">
-          <img src="img/foto.png" alt="Фото">
-
+          <img loading="lazy" src="images/foto.png" alt="Фото">
         </div>
       </div>
     </div><!--  name-resume -->
+    <div class="container header__text-wrap">
+      <div class="header__text-block">
+        <p class="header__text-item">Создание сайтов под ключ. Разработка лендингов, продающих страниц.</p>
+        <p class="header__text-item">Магазины и корпоративные сайты. Сайты визитки.</p>
+        <p class="header__text-item">Разработка мобильных версий. Анимация. Слайдеры. Табы.</p>
+      </div>
+    </div> <!-- header__text-wrap -->
+
+    <div class=" container header__arrov-wrap">
+      <a href="#skills">
+        <div class="header__arrov-item arrov-top"><i class="fas fa-chevron-down"></i></div>
+        <div class="header__arrov-item arrov-bottom"><i class="fas fa-chevron-down"></i></div>
+      </a>
+    </div><!-- header__arrov-wrap -->
   </header>
 
+  <!-------------- skills -->
+  <section class="portfolio" id="skills">
+    <div class="container ">
+      <div class="portfolio__parallax">
+        <div class="portfolio__layer layer-img-1" data-speed="40"><img loading="lazy" src="images/skills-1.png"
+            alt="skills-1"></div>
+        <div class="portfolio__layer layer-img-2" data-speed="80"><img loading="lazy" src="images/skills-2.png"
+            alt="skills-2"></div>
+      </div> <!-- portfolio__parallax -->
 
-  <!-- block-min -->
-  <div class="mini-box">
+      <div class="portfolio__block">
+        <div class="portfolio__block-title">
+          <h2>Навыки</h2>
+        </div>
+        <div class="skills__title ">
+          <h3>Работаю в таких техниках</h3>
+        </div>
+        <div class="skills__icon " data-aos="fade-right" data-aos-duration="1000">
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-1.jpg" alt="html"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-2.jpg" alt="css"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-3.jpg" alt="js"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-4.jpg" alt="sass"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-5.jpg" alt="less"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-6.jpg" alt="opencart"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-7.jpg" alt="photoshop"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-8.jpg" alt="ai"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-9.jpg" alt="gulp"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-10.jpg" alt="elementor"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-11.jpg" alt="woocomerce"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-12.jpg" alt="git"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-13.jpg" alt="joomla"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-14.jpg" alt="zeplin"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-15.jpg" alt="bootstrap"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-16.jpg" alt="figma"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-17.jpg" alt="jquery"></div>
+          <div class="skills__icon-item"><img loading="lazy" src="images/icon-18.jpg" alt="wordpress"></div>
+        </div><!-- skills__icon -->
+
+        <div class="skills__text">
+          <p>С 2012 года активно занимаюсь сайтостроением, web
+            технологиями. Среди сайтов созданных мной лендинги, блоги, магазины, сайты визитки, корпоративные сайты.
+            Есть
+            разработки калькуляторов, микро-казино созданные с помощью JavaScript и jQuery.</p><br>
+          <p>Проэкты адаптивны с чистым кодом и отвечают современным требованиям</p><br>
+          <p> Живу в Украине, в городе Харькове. Веду блог о художниках и живописи -
+            <a class="skills__text-link" href="https://artatac.ru" target="_blank">artatac.ru</a>. Записал авторский
+            <a class="skills__text-link" href="https://color.artatac.ru/risunokbasis.html" target="_blank">
+              курс
+              по
+              рисунку</a>. Есть канал на <a class="skills__text-link"
+              href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" target="_blank">YouTube</a>,
+            ссылки на этом сайте.</p>
+        </div>
+      </div><!-- container -->
+  </section>
+  <!--------------конец skills -->
+
+  <!---------  portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container ">
+      <div class="portfolio__parallax">
+        <div class="portfolio__layer layer-img-1" data-speed="40"><img loading="lazy" src="images/portfolio-1.png"
+            alt="portfolio-1">
+        </div>
+        <div class="portfolio__layer layer-img-2" data-speed="80"><img loading="lazy" src="images/portfolio-2.png"
+            alt="portfolio-2">
+        </div>
+      </div> <!-- portfolio__parallax -->
+      <div class="portfolio__block">
+        <div class="portfolio__block-title">
+          <h2>Портфолио</h2>
+        </div>
+        <div class="portfolio__block-item">
+          <div class="portfolio__block-item-left">
+            <div class="portfolio-img-1"> <a href="https://milart61.github.io/lendschoolpage/" target="_blank"><img
+                  loading="lazy" src="images/portfolio-img-7.jpg" alt="lendschoolpage"></a></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>school</h3>
+              </div>
+              <div class="portfolio-text-item"> Сайт бизнес школы. <br>Адаптивный. Flex технология. <br> Присутствует
+                анимация, всплывающие окно. Три slick слайдера.<br> Аккордеон - ответы на вопросы.
+                <br><br><a class="portfolio-linc" href="https://milart61.github.io/lendschoolpage/"
+                  target="_blank">Ссылка: School</a></div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+          <div class="portfolio__block-item-left">
+            <div class="portfolio-img-1"><a href="https://milart61.github.io/yogaPage/" target="_blank"><img
+                  loading="lazy" src="images/portfolio-img-8.jpg" alt="yogaPag"></a></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>Йога</h3>
+              </div>
+              <div class="portfolio-text-item"> Лендинг для записи на занятия йогой. <br>Сайт адаптивный.<br>
+                Присутствует форма заказа,
+                фотогаллерея,
+                слайдер отзывов, магазин препаратов, блок оплаты, анимация.
+                <br><br><a class="portfolio-linc" href="https://milart61.github.io/yogaPage/" target="_blank">Ссылка:
+                  Yoga</a></div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+
+          <div class="portfolio__block-item-left portfolio-right">
+            <div class="portfolio-img-1"> <a href="https://color.artatac.ru/risunokbasis.html" target="_blank"><img
+                  loading="lazy" src="images/portfolio-img-5.jpg" alt="risunokbasis"></a></div>
+
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>рисунок</h3>
+              </div>
+              <div class="portfolio-text-item"> Лендинг. Курс обучения рисунку. <br>Сайт адаптивный.<br> Присутствует
+                фотогаллерея,
+                отзывы, видео-превью , блок зказа, анимация.
+                <br><br><a class="portfolio-linc" href="https://color.artatac.ru/risunokbasis.html"
+                  target="_blank">Ссылка:
+                  Рисунок</a></div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+
+          <div class="portfolio__block-item-left portfolio-right">
+            <div class="portfolio-img-1"><a href="https://milart61.github.io/circlepage  " target="_blank"><img
+                  loading="lazy" src="images/portfolio-img-6.jpg" alt="circlepage"></a></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>Игра "Круг удачи"</h3>
+              </div>
+              <div class="portfolio-text-item"> Игра создана на JavaScript.
+                Это микро казино.
+                Выбор суммы выигрыша происходит случайным образом (рандомно).
+                <br><br><a class="portfolio-linc" href="https://milart61.github.io/circlepage  " target="_blank">Ссылка:
+                  "Круг удачи"</a>
+              </div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+          <div class="portfolio__block-item-left">
+            <div class="portfolio-img-1"> <a href="https://artatac.ru/" target="_blank"><img loading="lazy"
+                  src="images/portfolio-img-1.jpg" alt="artatac"></a></div>
+
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>живопись</h3>
+              </div>
+              <div class="portfolio-text-item"> Блог создан на Wordpress. <br>Сайт адаптивный, создан на шаблоне<br>
+                Сайт о живописи,
+                обучение рисованию. <br><br><a class="portfolio-linc" href="https://artatac.ru/" target="_blank">Ссылка:
+                  Illusion</a></div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+          <div class="portfolio__block-item-left">
+            <div class="portfolio-img-1"><a href="https://docmassage.ru/" target="_blank"><img loading="lazy"
+                  src="images/portfolio-img-2.jpg" alt="docmassage"></a></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>медицина</h3>
+              </div>
+              <div class="portfolio-text-item"> Блог создан на Wordpress. <br>Сайт адаптивный, создан на шаблоне<br>
+                Сайт информационный, о массаже.
+                <br><br><a class="portfolio-linc" href="https://docmassage.ru/" target="_blank">Ссылка: Doctor</a></div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+          <div class="portfolio__block-item-left portfolio-right">
+            <div class="portfolio-img-1"><img loading="lazy" src="images/portfolio-img-4.jpg" alt="медвежатник"></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>медвежатник</h3>
+              </div>
+              <div class="portfolio-text-item"> Сайт создан на Wordpress + Elementor. <br>Сайт адаптивный.<br>
+                Присутствует форма заказа,
+                фотогаллерея,
+                слайдер отзывов, контакты, параллакс эффект, анимация.</div>
+            </div><!-- portfolio-text -->
+          </div><!-- portfolio__block-item-left -->
+
+          <div class="portfolio__block-item-left portfolio-right">
+            <div class="portfolio-img-1"><img loading="lazy" src="images/portfolio-img-3.jpg" alt="Zootime"></div>
+            <div class="portfolio-text">
+              <div class="portfolio-text-title">
+                <h3>Zootime</h3>
+              </div>
+              <div class="portfolio-text-item"> Сайт создан на Wordpress, адаптивный.<br> Сайт информационный, о
+                выставке насекомых.<br> Присутствует
+                слайдер, видео, сайдбар.
+              </div><!-- portfolio-text -->
+            </div><!-- portfolio__block-item-left -->
+          </div>
+        </div>
+      </div> <!-- portfolio__block -->
+    </div> <!-- container -->
+  </section>
+  <!--------- конец portfolio -->
+
+
+  <!--------------- footer -->
+  <footer class="footer__block" id="contact">
     <div class="container">
-      <div class="mini-box-text">
-        Всю свою жизнь рисовал. Работал художником на разных предприятиях. Закончил мед. училище и работал
-        массажистом.<br> Сейчас активно занимаюсь сайтостроением, web технологиями. С 2012 года веду блог о художниках,
-        создал курс по
-        рисунку, есть канал на YouTube который можно посмотреть перейдя по ссылке в низу этого сайта.
-
-      </div> <!-- mini-box -->
-
-    </div> <!--  container -->
-  </div>
-  <!-- block-min -->
-
-  <!-- middle-block -->
-  <div class="container">
-    <div class="middle-block">
-      <div class="middle-left">
-        <div class="middle-skill">
-          <h3>навыки</h3>
-          <div class="middle-skill-wrap">
-            <div class="middle-skill-left">
-              <ul>
-                <li class="middle-li"><i class="fab fa-html5 "></i> <span class="fab-html5"> HTML 5</span> </li>
-                <li class="middle-li"><i class="fab fa-css3-alt "></i><span class="fab-html5"> CSS 3</span></li>
-                <li class="middle-li"><img class="fab-w" src="img/flex.png" alt="flex"> Flex</li>
-                <li class="middle-li"><img class="fab-w " src="img/bootstrap.png" alt="bootstrap"> Bootstrap</li>
-                <li class="middle-li"><img class="fab-w fab-jquery" src="img/jquery.png" alt="jquery">jQuery</li>
-                <li class="middle-li"><i class="fab fa-js "></i><span class="fab-js">Js</span></li>
-                <li class="middle-li"><i class="fab fa-sass fab-w"></i>Sass</li>
-                <li class="middle-li"><i class="fab fa-less "></i> <span class="fab-less">Less</span></li>
-
-                <li class="middle-li"><img class="fab-photo" src="img/photoshop.png" alt="photoshop">Photoshop </li>
-                <li class="middle-li"><img class="fab-photo" src="img/illustrator.png" alt="illustrator">Illustrator
-                </li>
-
-              </ul>
-            </div><!-- middle-skill-left -->
-            <div class="middle-skill-right">
-              <ul>
-                <li class="middle-li"><i class="fab fa-gulp fab-w"></i><span class="fab-gulp">Gulp</span></li>
-                <li class="middle-li"><i class="fab fa-github fab-w"></i>Git,</li>
-                <li class="middle-li"><img class="fab-figma" src="img/figma.png" alt="figma"> Figma</li>
-
-                <li class="middle-li"><img class="fab-figma" src="img/zeppelin.png" alt="zepelin"> Zeplin </li>
-                <li class="middle-li"><i class="fab fa-joomla "></i><span class="fab-joomla">Joomla</span> </li>
-
-                <li class="middle-li"><i class="fab fa-opencart "></i><span class="fab-ocart">OpenCar</span>
-                </li>
-                <li class="middle-li"><i class="fab fa-wordpress fab-w"></i>Wordpress </li>
-                <li class="middle-li"><img class="fab-w" src="img/unison.png" alt="unison">Unyson</li>
-                <li class="middle-li"><i class="fab fa-elementor fab-w"></i>Elementor</li>
-                <li class="middle-li"><img class="fab-w" src="img/woocomerce.png" alt="woocomerce">Woocommerce</li>
-
-              </ul>
-            </div><!-- middle-skill-right -->
-          </div> <!-- middle-skill-wrap -->
-        </div><!-- middle-skill -->
 
 
-        <!-- middle-contact -->
+      <div class="footer__block-title" data-aos="flip-up" data-aos-delay="600">
 
-        <div class="personal" id="contact">
-          <h3>контакты</h3>
-          <div class="personal-item">
-            <p class="personal-text text-one">E-mail: </p><span class="personal-span">upartist78@gmail.com</span>
-            <hr>
+        <h4>Контакты</h4>
+      </div><!-- footer__block-title -->
+
+      <div class="footer__block-page">
+        <div class="footer__block-one">
+          <div class="footer__block-contact"><i class="fas fa-globe"></i>
+            <span class="footer-txt">Ukraine, Kharkiv
+            </span>
           </div>
-          <div class="personal-item">
-            <p class="personal-text">Telegram: </p><span class="personal-span">https://t.me/milarti</span>
-            <hr>
-          </div>
+          <div class="footer__block-contact"><a href="tel:+380502768116" class="footer-link" target="_blank"><i
+                class="fas fa-phone-volume"></i>+38(050)-276-81-16</a></div>
+          <div class="footer__block-contact"><a href="mailto:upartist78@gmail.com" class="footer-link"
+              target="_blank"><i class="fas fa-envelope"></i>upartist78@gmail.com</a></div>
+          <div class="footer__block-contact"><a href="https://t.me/milarti" class="footer-link" target="_blank"><i
+                class="fab fa-telegram-plane"></i>https://t.me/milarti</a></div>
+        </div> <!-- footer__block-one -->
 
-          <div class="personal-item">
-            <p class="personal-text">тел. </p><span class="personal-span"><a
-                href="tel:+380502768116">+38(050)-276-81-16</a></span>
-            <hr>
-          </div>
-
-        </div>
-        <!-- end middle-contact -->
-
-
-
-        <!-- middle-personal -->
-        <div class="personal">
-          <h3>профайл</h3>
-          <div class="personal-item">
-            <p class="personal-text text-one">Имя </p><span class="personal-span">Милкин Александр</span>
-            <hr>
-          </div>
-          <div class="personal-item">
-            <p class="personal-text">Год рождения </p><span class="personal-span">1961</span>
-            <hr>
-          </div>
-          <div class="personal-item">
-            <p class="personal-text">Адрес </p><span class="personal-span">Украина, г. Харьков</span>
-            <hr>
-          </div>
-          <div class="personal-item">
-            <p class="personal-text">Образование </p><span class="personal-span">Медицинское</span>
-            <hr>
-          </div>
-
-        </div>
-        <!-- end middle-personal -->
+        <div class="footer__block-two">
+          <div class="footer__block-contact"><a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks"
+              class="footer-link" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></div>
+          <div class="footer__block-contact"><a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ"
+              class="footer-link" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></div>
+          <div class="footer__block-contact"><a href="https://twitter.com/milart61" class="portfolio-link"
+              target="_blank"><i class="fab fa-twitter"></i>Twitter</a></div>
+        </div> <!-- footer__block-two -->
+      </div> <!-- footer__block-page -->
 
 
 
-
-        <!-- hobbies -->
-        <div class="hobbies">
-          <h3>увлечения</h3>
-          <div class="hobbies-block">
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"> <i class="fas fa-globe"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">Путешествия</p>
-
-            </div>
-
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"> <i class="fas fa-palette"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">Живопись</p>
-
-            </div>
-
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"><i class="fas fa-table-tennis"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">Спорт</p>
-
-            </div>
-
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"><i class="fas fa-cocktail"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">общение</p>
-
-            </div>
-
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"><i class="fas fa-headphones"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">музыка</p>
-
-            </div>
-
-            <div class="hobbies-item">
-              <div class="hobbies-icon">
-                <div class="icon-awesome"><i class="fas fa-film"></i></div>
-
-              </div>
-              <p class="middle-li middle-icon">кино</p>
-
-            </div>
-
-          </div><!-- hobbies-block -->
-        </div>
-        <!--end hobbies -->
-
-      </div><!-- middle-left -->
-
-      <!-- portfolio -->
-      <div class="middle-right">
-        <div class="middle-portfolio" id="portfolio">
-          <h3>Портфолио</h3>
-          <div class="portfolio-work">
-
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://milart61.github.io/circlepage  " target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/circle.png" alt="School">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>Игра "Круг удачи"</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Игра создана на JavaScript.
-                    Это микро казино.
-                    Выбор суммы выигрыша происходит случайным образом (рандомно). Создан массив из него случайно
-                    программа выбирает сумму и выводит ее на страницу сайта.
-                    <br><br>Ссылка: "Круг удачи"
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://milart61.github.io/lendschoolpage/" target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/lendshcool.jpg" alt="School">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>school</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Сайт бизнес школы. <br>Адаптивный. Flex технология. <br> Присутствует анимация. Всплывающее окно для
-                    записи в школу. Три slick слайдера.<br> Аккордеон - ответы на вопросы.
-                    <br><br>Ссылка: School
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://milart61.github.io/yogaPage/" target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/yoga.jpg" alt="yoga">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>Йога</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Лендинг для записи на занятия йогой. <br>Сайт адаптивный.<br> Присутствует форма заказа,
-                    фотогаллерея,
-                    слайдер отзывов, магазин препаратов, блок оплаты. <br>На сайте присутствует анимация.
-                    <br><br>Ссылка:
-                    Yoga
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://color.artatac.ru/risunokbasis.html" target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/point.jpg" alt="point">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>рисунок</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Лендинг. Курс обучения рисунку. <br>Сайт адаптивный.<br> Присутствует фотогаллерея,
-                    отзывы, видео-превью , блок зказа. <br>На сайте присутствует анимация.
-                    <br><br>Ссылка:
-                    Рисунок
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="img/key.jpg" alt="key">
-                </div>
-                <div class="portfolio-title">
-                  <h4>медвежатник</h4>
-                </div>
-                <div class="portfolio-text">
-                  Сайт создан на Wordpress + Elementor. <br>Сайт адаптивный.<br> Присутствует форма заказа,
-                  фотогаллерея,
-                  слайдер отзывов, контакты, параллакс эффект. <br>На сайте присутствует анимация.
-                </div>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://artatac.ru/" target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/artatac.jpg" alt="artatac">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>живопись</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Блог создан на Wordpress. <br>Сайт адаптивный, создан на шаблоне<br> Сайт о живописи,
-                    обучение рисованию. <br><br>Ссылка: Illusion
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <a href="https://docmassage.ru/" target="_blank">
-                  <div class="portfolio-img">
-                    <img src="img/docnet.jpg" alt="docnet">
-                  </div>
-                  <div class="portfolio-title">
-                    <h4>медицина</h4>
-                  </div>
-                  <div class="portfolio-text">
-                    Блог создан на Wordpress. <br>Сайт адаптивный, создан на шаблоне<br> Сайт информационный, о массаже.
-                    <br><br>Ссылка: Doctor
-                  </div>
-                </a>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
-
-
-            <div class="portfolio-wrap">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="img/butterfly.jpg" alt="yoga">
-                </div>
-                <div class="portfolio-title">
-                  <h4>Zootime</h4>
-                </div>
-                <div class="portfolio-text">
-                  Сайт создан на Wordpress, адаптивный.<br> Сайт информационный, о выставке насекомых.<br> Присутствует
-                  слайдер, видео, сайдбар.
-                </div>
-              </div> <!-- portfolio-item -->
-            </div> <!-- portfolio-wrap -->
+    </div> <!-- footer__block -->
 
 
 
-          </div> <!-- portfolio-work -->
-
-        </div><!-- middle-portfolio -->
-
-      </div><!-- middle-right -->
-      <!-- end portfolio -->
-
-    </div> <!-- middle-block -->
-  </div> <!-- container -->
-  <!-- end middle-block -->
-
-
-  <footer class="container-footer">
-    <div class="footer-wrap">
-      <div class="footer-title">
-        Соцсети
+    </div><!-- container -->
+    <div class="footer__copyright">
+      <div class="footer__copyright-title">
+        &copy; 2012 Summary
       </div>
-      <div class="footer-social">
-
-
-        <a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks" class="portfolio-link" target="_blank">
-          <div class="social-item">
-            <div class="social-icon social-icon-fa"><i class="fab fa-facebook-f"></i></div>
-          </div>
-        </a>
-
-
-        <a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" class="portfolio-link" target="_blank">
-          <div class="social-item">
-            <div class="social-icon social-icon-yo"><i class="fab fa-youtube"></i></div>
-
-          </div>
-        </a>
-
-        <a href="https://twitter.com/milart61" class="portfolio-link" target="_blank">
-          <div class="social-item">
-            <div class="social-icon social-icon-tw"><i class="fab fa-twitter"></i></div>
-
-          </div>
-        </a>
-      </div> <!-- footer-social -->
-    </div><!-- footer-wrap -->
-    <div class="footer-text">
-      <p>Web developer RESUME</p>
-    </div><!-- footer-text -->
-
-
-
+    </div> <!-- footer-copyright -->
 
 
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" rel="preload" as="script"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="preload" as="script"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" rel="preload" as="script"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/v4-shims.js" rel="preload" as="script"></script>
 
-  <script src="js/libs.min.js" rel="preload" as="script"></script>
-  <script src="js/main.js" rel="preload" as="script"></script>
+  <!---------------конец  footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="js/my.js" rel="preload" as="script" defer></script>
+
+
 </body>
 
 </html>
