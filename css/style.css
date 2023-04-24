@@ -56,7 +56,7 @@
 html,
 body {
   height: 100%;
-  min-width: 320px;
+  min-width: 318px;
 }
 
 body {
@@ -228,7 +228,7 @@ html {
 }
 .portfolio .portfolio-img-1 img {
   border-radius: 8px;
-  min-width: 300px;
+  max-width: 270px;
 }
 .portfolio .portfolio-img-1 a:hover {
   filter: brightness(85%);
@@ -287,17 +287,6 @@ html {
   text-transform: uppercase;
 }
 
-.skills__icon {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 880px;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
 .skills__icon-item {
   margin: 0 6px 12px 6px;
   box-shadow: 1px 1px 5px 1px rgba(19, 19, 19, 0.425);
@@ -328,10 +317,6 @@ html {
   .wraper-name .foto-resume img {
     margin: 0 auto;
   }
-  .circel__wrap .circel__wrap-top {
-    top: -19px;
-    left: -20px;
-  }
 }
 @media (max-width: 1060px) {
   .header__wrap-ul {
@@ -347,10 +332,6 @@ html {
 @media (max-width: 955px) {
   .circel__wrap {
     max-width: 317px;
-  }
-  .circel__wrap-top {
-    top: -20px;
-    left: -20px;
   }
   .wraper-name .foto-resume img {
     margin: 0 auto;
@@ -402,7 +383,6 @@ html {
   #contact {
     padding-top: 85px;
     margin-top: -55px;
-    background-clip: content-box;
   }
   .header__menu-burger {
     left: 80%;
@@ -472,6 +452,7 @@ html {
   }
   .portfolio-img-1 img {
     width: 300px;
+    margin-top: 15px;
   }
   .portfolio__parallax .layer-img-1 {
     display: none;
@@ -509,6 +490,132 @@ html {
 @media (max-width: 455px) {
   .circel__wrap-top {
     display: none;
+  }
+}
+.album-wrapper .album-container {
+  overflow: hidden;
+}
+
+.album-inner span {
+  float: left;
+  width: 50%;
+}
+
+.album-wrapper .album-block {
+  height: 150px;
+  width: 1200px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 20px auto;
+  padding: 30px 0;
+}
+
+.album-inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+}
+
+.album-inner.to-left {
+  animation: albumLeft 25s linear infinite;
+}
+
+.album-inner.to-right {
+  animation: albumRight 25s linear infinite;
+}
+
+.album-item {
+  width: 80px;
+  height: auto;
+  display: inline-block;
+  margin: 0 20px;
+  float: left;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes albumLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes albumRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#preloader {
+  position: fixed;
+  background-color: #15171b;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .icon-menu {
@@ -662,11 +769,11 @@ header {
   }
 }
 .foto-resume img {
-  width: 280px;
+  width: 190px;
   border-radius: 50%;
-  margin-right: 40px;
-  margin-top: 15px;
   box-shadow: 1px 5px 38px 10px #000;
+  margin-left: 49px;
+  margin-top: 16px;
 }
 
 h1 {
@@ -684,7 +791,6 @@ h1 {
   color: #06ff6e;
   text-shadow: #06ff6e 1px 0 60px;
   font-weight: 100;
-  font-size: 52px;
   padding-bottom: 60px;
   text-transform: capitalize;
   margin-left: -300%;
@@ -693,6 +799,16 @@ h1 {
   animation-delay: 4.3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.65, 1.95, 0.03, 0.32);
+}
+@supports (font-size: clamp( 2.625rem , 2.4935515873rem  +  0.6613756614vw , 3.25rem )) {
+  .text-resume {
+    font-size: clamp( 2.625rem , 2.4935515873rem  +  0.6613756614vw , 3.25rem );
+  }
+}
+@supports not (font-size: clamp( 2.625rem , 2.4935515873rem  +  0.6613756614vw , 3.25rem )) {
+  .text-resume {
+    font-size: calc(2.625rem + 0.625 * (100vw - 19.875rem) / 94.5);
+  }
 }
 
 @keyframes titleAnimate {
@@ -733,10 +849,28 @@ h1 {
   flex-wrap: wrap;
   margin: 0 90px;
   align-items: center;
+  margin-top: -190px;
+}
+@media (max-width: 1791px) {
+  .wraper-name {
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 }
 
 .name-resume {
-  margin: 150px 150px 50px 150px;
+  margin: 200px 150px 50px 150px;
+}
+
+.title-resume {
+  margin-top: -3%;
+}
+@media (max-width: 1791px) {
+  .title-resume {
+    margin-top: -226px;
+    text-align: center;
+  }
 }
 
 .header__text-block {
@@ -747,6 +881,12 @@ h1 {
   color: #d4d4d4;
   text-shadow: 1px 1px 2px black, 5px 5px 12px rgb(0, 0, 0);
   margin-bottom: 5%;
+  margin-top: -10%;
+}
+@media (max-width: 1791px) {
+  .header__text-block {
+    margin-top: 0;
+  }
 }
 
 .header__text-item {
@@ -915,15 +1055,18 @@ h1 {
 }
 .circel__wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
 }
 
 .circel__wrap-top {
   position: absolute;
   top: -4px;
-  left: 20px;
+  left: 18px;
 }
 .circel__wrap-top .circle-imges {
-  width: 320px;
+  width: 230px;
   animation: circleanime 20s linear infinite;
 }
 
@@ -942,13 +1085,18 @@ h1 {
   font-size: 19px;
   padding: 15px 0px;
 }
+.webgl {
+  left: 0;
+  outline: none;
+}
+
 .footer__block {
   background: rgb(24, 27, 37);
   height: auto;
 }
 .footer__block .footer__block-one,
 .footer__block .footer__block-two {
-  width: 318px;
+  width: 316px;
 }
 .footer__block .footer__block-title {
   color: #fff;
@@ -985,6 +1133,13 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 50px;
+}
+@media (max-width: 665px) {
+  .footer__block .footer__block-page {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .footer__copyright {

@@ -2,13 +2,13 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Milkin Alexsander</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?_v=20230108131528" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" type="text/css">
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20230108131528">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?_v=20230424154131" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" type="text/css">
+
+	<link rel="stylesheet" href="css/style.min.css?_v=20230424154131">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,12 @@
 <body>
 	<div class="wrapper">
 
+		<!-- Прелоадер Preloader  -->
+		<div id="preloader">
+			<div id="loader"></div>
+		</div>
 
+		<!-- end Прелоадер Preloader  -->
 
 		<header id="resume">
 			<div class="header__wrap ">
@@ -29,10 +34,13 @@
 
 						<nav class="header__menu-wrap ">
 							<ul class="header__wrap-ul ">
-								<li class="header__wrap-li"> <a class="header__wrap-items" href="#resume">Summary</a></li>
-								<li class="header__wrap-li"> <a class="header__wrap-items" href="#skills">Skills</a></li>
+								<li class="header__wrap-li"> <a class="header__wrap-items" href="#resume">Summary</a>
+								</li>
+								<li class="header__wrap-li"> <a class="header__wrap-items" href="#skills">Skills</a>
+								</li>
 								<li class="header__wrap-li"><a class="header__wrap-items" href="#portfolio">Portfolio</a></li>
-								<li class="header__wrap-li"><a class="header__wrap-items" href="#contact">Contacts</a></li>
+								<li class="header__wrap-li"><a class="header__wrap-items" href="#contact">Contacts</a>
+								</li>
 							</ul>
 						</nav>
 
@@ -48,19 +56,22 @@
 
 								<a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks" class="portfolio-link" target="_blank">
 									<div class="header__wrap-item">
-										<div class="header__wrap-icon social-icon-fa"><i class="fab fa-facebook-f"></i></div>
+										<div class="header__wrap-icon social-icon-fa"><i class="fab fa-facebook-f"></i>
+										</div>
 									</div>
 								</a>
 
 								<a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" class="portfolio-link" target="_blank">
 									<div class="header__wrap-item">
-										<div class="header__wrap-icon social-icon-yo"><i class="fab fa-youtube"></i></div>
+										<div class="header__wrap-icon social-icon-yo"><i class="fab fa-youtube"></i>
+										</div>
 									</div>
 								</a>
 
 								<a href="https://twitter.com/milartar" class="portfolio-link" target="_blank">
 									<div class="header__wrap-item">
-										<div class="header__wrap-icon social-icon-tw"><i class="fab fa-twitter"></i></div>
+										<div class="header__wrap-icon social-icon-tw"><i class="fab fa-twitter"></i>
+										</div>
 
 									</div>
 								</a>
@@ -135,18 +146,12 @@
 						</h1>
 						<div class="text-resume">web developer</div>
 					</div>
-
-
-					<div class="circel__wrap ">
-
-						<div class="circel__wrap-top">
-							<img class="circle-imges" src="img/circle-img.png" alt="circle">
-						</div>
-
-						<div class="foto-resume">
-							<img loading="lazy" src="img/foto.png" alt="Фото">
-						</div>
+					<div class="canvas__container">
+						<p>Ghbdtn</p>
+						<canvas class="webgl"></canvas>
 					</div>
+
+
 
 				</div>
 			</div><!--  name-resume -->
@@ -155,7 +160,7 @@
 					<p class="header__text-item">
 						CREATION OF TURNKEY SITES. DEVELOPMENT OF LENDINGS, SELLING PAGES.</p>
 					<p class="header__text-item">STORES AND CORPORATE SITES. BUSINESS CARD SITES.</p>
-					<p class="header__text-item">DEVELOPMENT OF MOBILE VERSIONS. ANIMATION. SLIDERS. TAB.</p>
+					<p class="header__text-item">DEVELOPMENT OF MOBILE VERSIONS. ANIMATION. SLIDERS. TAB. THREEJS.</p>
 				</div>
 			</div> <!-- header__text-wrap -->
 
@@ -188,35 +193,154 @@
 						<div class="skills__title ">
 							<h3>I work with these technologies.</h3>
 						</div>
-						<div class="skills__icon ">
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-1.jpg" alt="html"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-2.jpg" alt="css"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-3.jpg" alt="js"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-4.jpg" alt="sass"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-5.jpg" alt="less"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-6.jpg" alt="opencart">
+
+
+						<div class="album-wrapper">
+							<div class="album-container">
+								<div class="album-block">
+									<div class="album-inner to-left">
+										<span>
+											<div class="album-item">
+												<img src="img/icon-1.jpg" alt="">
+
+											</div>
+											<div class="album-item">
+												<img src="img/icon-2.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-3.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-4.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-5.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-6.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-7.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-8.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-9.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-10.jpg" alt="">
+											</div>
+
+										</span>
+										<span>
+											<div class="album-item">
+												<img src="img/icon-1.jpg" alt="">
+
+											</div>
+											<div class="album-item">
+												<img src="img/icon-2.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-3.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-4.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-5.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-6.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-7.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-8.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-9.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-10.jpg" alt="">
+											</div>
+										</span>
+									</div>
+								</div>
+								<div class="album-block">
+									<div class="album-inner to-right">
+										<span>
+											<div class="album-item">
+												<img src="img/icon-11.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-12.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-13.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-14.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-15.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-16.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-17.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-18.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-19.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-20.jpg" alt="">
+											</div>
+										</span>
+										<span>
+											<div class="album-item">
+												<img src="img/icon-11.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-12.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-13.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-14.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-15.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-16.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-17.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-18.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-19.jpg" alt="">
+											</div>
+											<div class="album-item">
+												<img src="img/icon-20.jpg" alt="">
+											</div>
+										</span>
+									</div>
+								</div>
 							</div>
-							<div class="skills__icon-item "><img loading="lazy" src="img/icon-7.jpg" alt="photoshop">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-8.jpg" alt="ai"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-9.jpg" alt="gulp"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-10.jpg" alt="elementor">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-11.jpg" alt="woocomerce"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-12.jpg" alt="git"></div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-13.jpg" alt="joomla">
-							</div>
-							<div class="skills__icon-item skills__icon-item-js"><img loading="lazy" src="img/icon-14.jpg" alt="zeplin">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-15.jpg" alt="bootstrap">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-16.jpg" alt="figma">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-17.jpg" alt="jquery">
-							</div>
-							<div class="skills__icon-item"><img loading="lazy" src="img/icon-18.jpg" alt="wordpress">
-							</div>
-						</div><!-- skills__icon -->
+						</div>
+
+
+
 
 						<div class="skills__text">
 							<p>
@@ -251,12 +375,14 @@
 			<!-- =======portfolio -->
 			<section class="portfolio" id="portfolio">
 				<div class="portfolio__container ">
+
 					<div class="portfolio__parallax">
 						<div class="portfolio__layer layer-img-1" data-speed="40"><img loading="lazy" src="img/portfolio-1.png" alt="portfolio-1">
 						</div>
 						<div class="portfolio__layer layer-img-2" data-speed="80"><img loading="lazy" src="img/portfolio-2.png" alt="portfolio-2">
 						</div>
 					</div> <!-- portfolio__parallax -->
+
 					<div class="portfolio__block">
 						<div class="portfolio__block-title">
 							<h2>Portfolio</h2>
@@ -517,52 +643,70 @@
 
 
 						</div>
-					</div>
-				</div> <!-- portfolio__block -->
-	</div> <!-- container -->
-	</section>
-	<!-- ======= конец portfolio -->
-	</main>
+						<!--portfolio__block-item-->
+					</div><!-- portfolio__block -->
 
-	<!-- ======= footer -->
-	<footer class="footer__block " id="contact">
-		<div class="footer__container">
+				</div> <!-- container-->
+			</section>
+			<!-- ======= конец portfolio -->
+		</main>
+
+		<!-- ======= footer -->
+		<footer class="footer__block " id="contact">
+			<div class="footer__container">
 
 
-			<div class="footer__block-title">
+				<div class="footer__block-title">
 
-				<h4>
-					Contacts</h4>
-			</div><!-- footer__block-title -->
+					<h4>
+						Contacts</h4>
+				</div><!-- footer__block-title -->
 
-			<div class="footer__block-page">
-				<div class="footer__block-one">
-					<div class="footer__block-contact"><i class="fas fa-globe"></i>
-						<span class="footer-txt">Ukraine, Kharkiv
-						</span>
-					</div>
-					<div class="footer__block-contact"><a href="tel:+380502768116" class="footer-link" target="_blank"><i class="fas fa-phone-volume"></i>+38(050)-276-81-16</a></div>
-					<div class="footer__block-contact"><a href="mailto:upartist78@gmail.com" class="footer-link" target="_blank"><i class="fas fa-envelope footer__block-title-js"></i>upartist78@gmail.com</a>
-					</div>
-					<div class="footer__block-contact"><a href="https://t.me/milarti" class="footer-link" target="_blank"><i class="fab fa-telegram-plane"></i>https://t.me/milarti</a></div>
-				</div> <!-- footer__block-one -->
+				<div class="footer__block-page">
+					<div class="footer__block-one">
+						<div class="footer__block-contact"><i class="fas fa-globe"></i>
+							<span class="footer-txt">Ukraine, Kharkiv
+							</span>
+						</div>
+						<div class="footer__block-contact"><a href="tel:+380502768116" class="footer-link" target="_blank"><i class="fas fa-phone-volume"></i>+38(050)-276-81-16</a></div>
+						<div class="footer__block-contact"><a href="mailto:upartist78@gmail.com" class="footer-link" target="_blank"><i class="fas fa-envelope footer__block-title-js"></i>upartist78@gmail.com</a>
+						</div>
+						<div class="footer__block-contact"><a href="https://t.me/milarti" class="footer-link" target="_blank"><i class="fab fa-telegram-plane"></i>https://t.me/milarti</a></div>
 
-				<div class="footer__block-two">
-					<div class="footer__block-contact"><a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks" class="footer-link" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></div>
-					<div class="footer__block-contact"><a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" class="footer-link" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></div>
-					<div class="footer__block-contact"><a href="https://twitter.com/milartar" class="portfolio-link" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></div>
-				</div> <!-- footer__block-two -->
-			</div> <!-- footer__block-page -->
-		</div><!-- container -->
+						<div class="footer__block-contact"><a href="https://www.facebook.com/AlecsandrMILKIN?ref=bookmarks" class="footer-link" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></div>
+						<div class="footer__block-contact"><a href="https://www.youtube.com/channel/UCdR2h05zZjQPSjjNKDXbrNQ" class="footer-link" target="_blank"><i class="fab fa-youtube"></i>YouTube</a></div>
+						<div class="footer__block-contact"><a href="https://twitter.com/milartar" class="portfolio-link" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></div>
+					</div> <!-- footer__block-one -->
 
-		<div class="footer__copyright">
-			<div class="footer__copyright-title ">
-				&copy; 2012 Summary
-			</div>
-		</div> <!-- footer-copyright -->
+					<div class="footer__block-two">
+						<div class="circel__wrap ">
 
-	</footer>
-	<!-- ===== конец  footer -->
+							<div class="circel__wrap-top">
+								<img class="circle-imges" src="img/circle-img.png" alt="circle">
+							</div>
+
+							<div class="foto-resume">
+								<img loading="lazy" src="img/foto.png" alt="Фото">
+							</div>
+						</div>
+
+
+
+
+
+
+					</div> <!-- footer__block-two -->
+				</div> <!-- footer__block-page -->
+			</div><!-- container -->
+
+			<div class="footer__copyright">
+				<div class="footer__copyright-title ">
+					&copy; 2012 Summary
+				</div>
+			</div> <!-- footer-copyright -->
+
+		</footer>
+		<!-- ===== конец  footer -->
 
 
 
@@ -584,8 +728,8 @@
 
 
 
-	<script src="js/app.min.js?_v=20230108131528"></script>
-	<!-- <script src="js/main.min.js?_v=20230108131528" rel="preload" defer></script> -->
+	<script src="js/app.min.js?_v=20230424154131"></script>
+	<!-- <script src="js/main.min.js?_v=20230424154131" rel="preload" defer></script> -->
 
 </body>
 
