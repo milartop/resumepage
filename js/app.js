@@ -782,14 +782,22 @@
         return Lenis;
     }));
     const lenis = new Lenis;
-    lenis.on("scroll", (e => {
-        console.log(e);
-    }));
     function raf(time) {
         lenis.raf(time);
         requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
+    document.querySelectorAll(".header__wrap-items").forEach((anchor => {
+        anchor.addEventListener("click", (function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            lenis.scrollTo(target, {
+                offset: 0,
+                duration: .5,
+                easing: t => t
+            });
+        }));
+    }));
     window["FLS"] = false;
     isWebp();
     menuInit();

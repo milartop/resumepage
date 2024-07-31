@@ -115,10 +115,6 @@ h6 {
   font-size: inherit;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .lock body {
   overflow: hidden;
   touch-action: none;
